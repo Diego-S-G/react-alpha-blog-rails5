@@ -5,14 +5,18 @@ import { SketchPicker } from "react-color";
 class ColorPicker extends React.Component {
   constructor(props) {
     super(props);
+
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange = {};
+  handleChange = (color) => {
+    console.log(color.hex);
+  }
 
   render() {
     return (
       <React.Fragment>
-        <SketchPicker />
+        <SketchPicker color={this.props.color} onChange={this.handleChange} />
       </React.Fragment>
     );
   }
