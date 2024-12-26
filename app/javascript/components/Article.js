@@ -1,11 +1,16 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
+
 class Article extends React.Component {
-  render () {
+  render() {
     return (
       <React.Fragment>
-        Title: {this.props.title}
-        Description: {this.props.description}
+        <div class="article-title">
+          <a href={this.props.path}>{this.props.title}</a>
+        </div>
+        <div class="article-body">
+          {this.props.description}
+        </div>
       </React.Fragment>
     );
   }
@@ -13,6 +18,8 @@ class Article extends React.Component {
 
 Article.propTypes = {
   title: PropTypes.string,
+  path: PropTypes.string,
   description: PropTypes.string
 };
-export default Article
+
+export default Article;
