@@ -65,25 +65,6 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!*************************************!*\
-  !*** ./node_modules/react/index.js ***!
-  \*************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {
-  module.exports = require('./cjs/react.production.min.js');
-} else {
-  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ 11);
-}
-
-
-/***/ }),
-/* 1 */
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
   \*********************************************/
@@ -185,7 +166,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 2 */
+/* 1 */
 /*!***************************************************!*\
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
   \***************************************************/
@@ -300,6 +281,25 @@ module.exports = checkPropTypes;
 
 
 /***/ }),
+/* 2 */
+/*!*************************************!*\
+  !*** ./node_modules/react/index.js ***!
+  \*************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {
+  module.exports = require('./cjs/react.production.min.js');
+} else {
+  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ 11);
+}
+
+
+/***/ }),
 /* 3 */
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
@@ -350,42 +350,12 @@ module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
 if (false) {
   module.exports = require('./cjs/react-is.production.min.js');
 } else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ 12);
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ 13);
 }
 
 
 /***/ }),
 /* 6 */
-/*!******************************************!*\
-  !*** ./node_modules/prop-types/index.js ***!
-  \******************************************/
-/*! dynamic exports provided */
-/*! exports used: default */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ 5);
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ 13)(ReactIs.isElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = require('./factoryWithThrowingShims')();
-}
-
-
-/***/ }),
-/* 7 */
 /*!*****************************************!*\
   !*** ./node_modules/react-dom/index.js ***!
   \*****************************************/
@@ -435,7 +405,7 @@ if (false) {
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /*!***************************************************************************!*\
   !*** ./node_modules/react_ujs/react_ujs/src/getConstructor/fromGlobal.js ***!
   \***************************************************************************/
@@ -468,7 +438,7 @@ module.exports = function(className) {
 
 
 /***/ }),
-/* 9 */
+/* 8 */
 /*!***********************************************************************************!*\
   !*** ./node_modules/react_ujs/react_ujs/src/getConstructor/fromRequireContext.js ***!
   \***********************************************************************************/
@@ -503,19 +473,30 @@ module.exports = function(reqctx) {
 
 
 /***/ }),
+/* 9 */
+/*!**********************************************!*\
+  !*** ./app/javascript/components/Article.js ***!
+  \**********************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: SyntaxError: Unexpected token (14:32)\n\n  12 |           {this.props.description}\n  13 |           <div className=\"article-meta-details\">\n> 14 |             <small>Created by: <%= article.user.username if article.user %>, <%= time_ago_in_words(article.created_at) %> ago,\n     |                                 ^\n  15 |                   last updated: <%= time_ago_in_words(article.updated_at) %> ago</small>  \n  16 |           </div>\n  17 |         </div>\n");
+
+/***/ }),
 /* 10 */
-/*!***********************************************!*\
-  !*** ./app/javascript/components/Article.jsx ***!
-  \***********************************************/
+/*!*************************************************!*\
+  !*** ./app/javascript/components/HelloWorld.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(/*! prop-types */ 6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(/*! prop-types */ 12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -528,49 +509,34 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Article = function (_React$Component) {
-  _inherits(Article, _React$Component);
+var HelloWorld = function (_React$Component) {
+  _inherits(HelloWorld, _React$Component);
 
-  function Article() {
-    _classCallCheck(this, Article);
+  function HelloWorld() {
+    _classCallCheck(this, HelloWorld);
 
-    return _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (HelloWorld.__proto__ || Object.getPrototypeOf(HelloWorld)).apply(this, arguments));
   }
 
-  _createClass(Article, [{
+  _createClass(HelloWorld, [{
     key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment,
         null,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { "class": "article-title" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "a",
-            { href: this.props.path },
-            this.props.title
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { "class": "article-body" },
-          this.props.description
-        )
+        "Message: ",
+        this.props.greeting
       );
     }
   }]);
 
-  return Article;
+  return HelloWorld;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
-Article.propTypes = {
-  title: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-  path: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-  description: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
+HelloWorld.propTypes = {
+  greeting: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (Article);
+/* harmony default export */ __webpack_exports__["default"] = (HelloWorld);
 
 /***/ }),
 /* 11 */
@@ -599,8 +565,8 @@ if (true) {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(/*! object-assign */ 1);
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ 2);
+var _assign = __webpack_require__(/*! object-assign */ 0);
+var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ 1);
 
 var ReactVersion = '16.14.0';
 
@@ -2498,6 +2464,36 @@ exports.version = ReactVersion;
 
 /***/ }),
 /* 12 */
+/*!******************************************!*\
+  !*** ./node_modules/prop-types/index.js ***!
+  \******************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (true) {
+  var ReactIs = __webpack_require__(/*! react-is */ 5);
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ 14)(ReactIs.isElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = require('./factoryWithThrowingShims')();
+}
+
+
+/***/ }),
+/* 13 */
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
   \***********************************************************/
@@ -2690,7 +2686,7 @@ exports.typeOf = typeOf;
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /*!************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
   \************************************************************/
@@ -2709,11 +2705,11 @@ exports.typeOf = typeOf;
 
 
 var ReactIs = __webpack_require__(/*! react-is */ 5);
-var assign = __webpack_require__(/*! object-assign */ 1);
+var assign = __webpack_require__(/*! object-assign */ 0);
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ 3);
 var has = __webpack_require__(/*! ./lib/has */ 4);
-var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ 2);
+var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ 1);
 
 var printWarning = function() {};
 
@@ -3312,61 +3308,6 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 /***/ }),
-/* 14 */
-/*!*************************************************!*\
-  !*** ./app/javascript/components/HelloWorld.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/*! all exports used */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(/*! prop-types */ 6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-var HelloWorld = function (_React$Component) {
-  _inherits(HelloWorld, _React$Component);
-
-  function HelloWorld() {
-    _classCallCheck(this, HelloWorld);
-
-    return _possibleConstructorReturn(this, (HelloWorld.__proto__ || Object.getPrototypeOf(HelloWorld)).apply(this, arguments));
-  }
-
-  _createClass(HelloWorld, [{
-    key: "render",
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment,
-        null,
-        "Message: ",
-        this.props.greeting
-      );
-    }
-  }]);
-
-  return HelloWorld;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-HelloWorld.propTypes = {
-  greeting: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
-};
-/* harmony default export */ __webpack_exports__["default"] = (HelloWorld);
-
-/***/ }),
 /* 15 */
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
@@ -3393,10 +3334,10 @@ if (true) {
   (function() {
 'use strict';
 
-var React = __webpack_require__(/*! react */ 0);
-var _assign = __webpack_require__(/*! object-assign */ 1);
+var React = __webpack_require__(/*! react */ 2);
+var _assign = __webpack_require__(/*! object-assign */ 0);
 var Scheduler = __webpack_require__(/*! scheduler */ 16);
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ 2);
+var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ 1);
 var tracing = __webpack_require__(/*! scheduler/tracing */ 18);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED; // Prevent newer renderers from RTE when used with older react package versions.
@@ -29669,10 +29610,10 @@ exports.unstable_wrap = unstable_wrap;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./Article": 10,
-	"./Article.jsx": 10,
-	"./HelloWorld": 14,
-	"./HelloWorld.js": 14
+	"./Article": 9,
+	"./Article.js": 9,
+	"./HelloWorld": 10,
+	"./HelloWorld.js": 10
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -29699,13 +29640,13 @@ webpackContext.id = 20;
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-var React = __webpack_require__(/*! react */ 0)
-var ReactDOM = __webpack_require__(/*! react-dom */ 7)
+var React = __webpack_require__(/*! react */ 2)
+var ReactDOM = __webpack_require__(/*! react-dom */ 6)
 var ReactDOMServer = __webpack_require__(/*! react-dom/server */ 22)
 
 var detectEvents = __webpack_require__(/*! ./src/events/detect */ 24)
-var constructorFromGlobal = __webpack_require__(/*! ./src/getConstructor/fromGlobal */ 8)
-var constructorFromRequireContext = __webpack_require__(/*! ./src/getConstructor/fromRequireContext */ 9)
+var constructorFromGlobal = __webpack_require__(/*! ./src/getConstructor/fromGlobal */ 7)
+var constructorFromRequireContext = __webpack_require__(/*! ./src/getConstructor/fromRequireContext */ 8)
 var constructorFromRequireContextWithGlobalFallback = __webpack_require__(/*! ./src/getConstructor/fromRequireContextWithGlobalFallback */ 30)
 var constructorFromRequireContextsWithGlobalFallback = __webpack_require__(/*! ./src/getConstructor/fromRequireContextsWithGlobalFallback */ 31)
 const { supportsHydration, reactHydrate, createReactRootLike } = __webpack_require__(/*! ./src/renderHelpers */ 32)
@@ -29935,9 +29876,9 @@ if (true) {
   (function() {
 'use strict';
 
-var React = __webpack_require__(/*! react */ 0);
-var _assign = __webpack_require__(/*! object-assign */ 1);
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ 2);
+var React = __webpack_require__(/*! react */ 2);
+var _assign = __webpack_require__(/*! object-assign */ 0);
+var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ 1);
 
 // Do not require this module directly! Use normal `invariant` calls with
 // template literal strings. The messages will be replaced with error codes
@@ -34162,8 +34103,8 @@ module.exports = {
 // Make a function which:
 // - First tries to require the name
 // - Then falls back to global lookup
-var fromGlobal = __webpack_require__(/*! ./fromGlobal */ 8)
-var fromRequireContext = __webpack_require__(/*! ./fromRequireContext */ 9)
+var fromGlobal = __webpack_require__(/*! ./fromGlobal */ 7)
+var fromRequireContext = __webpack_require__(/*! ./fromRequireContext */ 8)
 
 module.exports = function(reqctx) {
   var fromCtx = fromRequireContext(reqctx)
@@ -34198,8 +34139,8 @@ module.exports = function(reqctx) {
 // Make a function which:
 // - First tries to require the name
 // - Then falls back to global lookup
-var fromGlobal = __webpack_require__(/*! ./fromGlobal */ 8)
-var fromRequireContext = __webpack_require__(/*! ./fromRequireContext */ 9)
+var fromGlobal = __webpack_require__(/*! ./fromGlobal */ 7)
+var fromRequireContext = __webpack_require__(/*! ./fromRequireContext */ 8)
 
 module.exports = function(reqctxs) {
   var fromCtxs = reqctxs.map((reqctx) => fromRequireContext(reqctx))
@@ -34289,7 +34230,7 @@ function legacyReactRootLike(node) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_dom__ = __webpack_require__(/*! react-dom */ 7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_dom__ = __webpack_require__(/*! react-dom */ 6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react_dom__);
 
 
@@ -34337,4 +34278,4 @@ ReactRailsUJS.useContext(componentRequireContext);
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=server_rendering-09a857acc255b739e866.js.map
+//# sourceMappingURL=server_rendering-009b0e9a945c1b889511.js.map

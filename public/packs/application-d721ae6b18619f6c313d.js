@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/packs/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 36);
+/******/ 	return __webpack_require__(__webpack_require__.s = 34);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -504,9 +504,9 @@ module.exports = function(reqctx) {
 
 /***/ }),
 /* 10 */
-/*!***********************************************!*\
-  !*** ./app/javascript/components/Article.jsx ***!
-  \***********************************************/
+/*!**********************************************!*\
+  !*** ./app/javascript/components/Article.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -545,7 +545,7 @@ var Article = function (_React$Component) {
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
-          { "class": "article-title" },
+          { className: "article-title" },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "a",
             { href: this.props.path },
@@ -554,8 +554,23 @@ var Article = function (_React$Component) {
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
-          { "class": "article-body" },
-          this.props.description
+          { className: "article-body" },
+          this.props.description,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            { className: "article-meta-details" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "small",
+              null,
+              "Created by: ",
+              this.props.author,
+              ", ",
+              this.props.created_at,
+              " ago, last updated: ",
+              this.props.updated_at,
+              " ago"
+            )
+          )
         )
       );
     }
@@ -567,7 +582,10 @@ var Article = function (_React$Component) {
 Article.propTypes = {
   title: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
   path: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-  description: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
+  description: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+  author: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+  created_at: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+  updated_at: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Article);
@@ -29670,7 +29688,7 @@ exports.unstable_wrap = unstable_wrap;
 
 var map = {
 	"./Article": 10,
-	"./Article.jsx": 10,
+	"./Article.js": 10,
 	"./HelloWorld": 14,
 	"./HelloWorld.js": 14
 };
@@ -34319,22 +34337,29 @@ if (typeof __WEBPACK_IMPORTED_MODULE_0_react_dom___default.a != "undefined") {
 
 
 /***/ }),
-/* 34 */,
-/* 35 */,
-/* 36 */
-/*!**************************************************!*\
-  !*** ./app/javascript/packs/server_rendering.js ***!
-  \**************************************************/
+/* 34 */
+/*!*********************************************!*\
+  !*** ./app/javascript/packs/application.js ***!
+  \*********************************************/
 /*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-// By default, this pack is loaded for server-side rendering.
-// It must expose react_ujs as `ReactRailsUJS` and prepare a require context.
+/* eslint no-console:0 */
+// This file is automatically compiled by Webpack, along with any other files
+// present in this directory. You're encouraged to place your actual application logic in
+// a relevant structure within app/javascript and only use these pack files to reference
+// that code so it'll be compiled.
+//
+// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
+// layout file, like app/views/layouts/application.html.erb
+
+console.log('Hello World from Webpacker');
+// Support component names relative to this directory:
 var componentRequireContext = __webpack_require__(/*! components */ 20);
 var ReactRailsUJS = __webpack_require__(/*! react_ujs */ 21);
 ReactRailsUJS.useContext(componentRequireContext);
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=server_rendering-09a857acc255b739e866.js.map
+//# sourceMappingURL=application-d721ae6b18619f6c313d.js.map

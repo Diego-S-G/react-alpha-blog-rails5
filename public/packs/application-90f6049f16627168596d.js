@@ -504,9 +504,9 @@ module.exports = function(reqctx) {
 
 /***/ }),
 /* 10 */
-/*!**********************************************!*\
-  !*** ./app/javascript/components/Article.js ***!
-  \**********************************************/
+/*!***********************************************!*\
+  !*** ./app/javascript/components/Article.jsx ***!
+  \***********************************************/
 /*! exports provided: default */
 /*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -29670,7 +29670,7 @@ exports.unstable_wrap = unstable_wrap;
 
 var map = {
 	"./Article": 10,
-	"./Article.js": 10,
+	"./Article.jsx": 10,
 	"./HelloWorld": 14,
 	"./HelloWorld.js": 14
 };
