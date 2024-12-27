@@ -8,4 +8,13 @@ class User < ApplicationRecord
             uniqueness: { case_sensitive: false },
             format: { with: VALID_EMAIL_REGEX }
   has_secure_password
+
+  validates :color, format: { with: /\A#(?:\h{3}|\h{6})\z/, message: "must be a valid hex color code!" }
+  before_validation :set_default_color
+
+  private
+
+  def set_default_color
+    self.color = '#FFFFFF' if color.blank?
+  end
 end
