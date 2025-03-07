@@ -28,3 +28,5 @@ yarn-debug.log*
 
 public/packs
 public/packs/*
+
+/config/secrets.yml
