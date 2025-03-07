@@ -1,7 +1,7 @@
 # Alpha Blog com Rails e React
 <br/>
 
-Este é um dos projetos que fiz acompanhando o [curso do Mashrur Hossain na Udemy](https://www.udemy.com/course/ruby-on-rails-react-angular), na minha trilha de aprendizado de Ruby e Rails usando React, AngularJS e Vuejs.
+Este é um dos projetos que fiz acompanhando o [curso do Mashrur Hossain na Udemy](https://www.udemy.com/course/ruby-on-rails-react-angular), na minha trilha de aprendizado de Ruby e Rails usando React, AngularJS e Vue.js.
 <br/>
 
 Ele usa o [Alpha Blog](https://github.com/Diego-S-G/alpha_blog) como base e integra React à aplicação, adicionando dois componentes: um nos **artigos**, substituindo alguns códigos ruby por react, e outro na página de edição do usuário, um **color picker**, dando a possibilidade de mudar a cor de fundo das páginas.
